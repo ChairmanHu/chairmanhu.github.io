@@ -4012,7 +4012,9 @@ input[type="button"].btn-block {
 .navbar-header:before,
 .navbar-header:after,
 .navbar-collapse:before,
-.navbar-collapse:after {
+.navbar-collapse:after,
+section:before,
+section:after {
   content: " ";
   display: table;
 }
@@ -4026,7 +4028,8 @@ input[type="button"].btn-block {
 .nav:after,
 .navbar:after,
 .navbar-header:after,
-.navbar-collapse:after {
+.navbar-collapse:after,
+section:after {
   clear: both;
 }
 .center-block {
@@ -4178,6 +4181,7 @@ input[type="button"].btn-block {
 /*
  * Globals
  */
+/* Colors */
 /* Links */
 a,
 a:focus,
@@ -4200,7 +4204,7 @@ a:hover {
 html,
 body {
   height: 100%;
-  background-color: #74C0CF;
+  background-color: #27adc5;
   font-family: 'Quicksand', sans-serif;
   font-size: 16px;
 }
@@ -4225,24 +4229,63 @@ h1 {
   display: table-cell;
   vertical-align: top;
 }
-.cover-container {
-  margin-right: auto;
-  margin-left: auto;
-}
 /* Padding for spacing */
 section {
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+  /* Center align the text within the three columns below the carousel */
   padding-top: 120px;
   padding-bottom: 120px;
+}
+@media (min-width: 768px) {
+  section {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  section {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  section {
+    width: 1170px;
+  }
+}
+section > .navbar-header,
+section > .navbar-collapse {
+  margin-right: -15px;
+  margin-left: -15px;
+}
+@media (min-width: 768px) {
+  section > .navbar-header,
+  section > .navbar-collapse {
+    margin-right: 0;
+    margin-left: 0;
+  }
+}
+section .col-lg-4 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+section h2 {
+  font-weight: normal;
+}
+section .col-lg-4 p {
+  margin-right: 10px;
+  margin-left: 10px;
 }
 .inner {
   padding: 30px;
 }
 /* Sections */
-#sectionWhy {
-  background-color: #63A69F;
+#sectionKim {
+  background-color: #d17869;
 }
-#sectionCarousel {
-  background-color: #D17869;
+#sectionEasy {
+  background-color: #74c0cf;
 }
 .section-lead {
   margin-bottom: 75px;
@@ -4292,14 +4335,18 @@ section {
 /*
  * Cover
  */
-.cover {
-  padding: 0 20px;
+#sectionCover {
+  display: table;
+  width: 100%;
+  height: 100%;
+  /* For at least Firefox */
+  min-height: 100%;
 }
-.cover .btn-lg {
+#sectionCover .btn-lg {
   padding: 10px 20px;
   font-weight: bold;
 }
-.cover img {
+#sectionCover img {
   height: 275px;
   width: 275px;
 }
@@ -4317,8 +4364,8 @@ section {
 .marketing {
   padding-right: 15px;
   padding-left: 15px;
+  /* Center align the text within the three columns below the carousel */
 }
-/* Center align the text within the three columns below the carousel */
 .marketing .col-lg-4 {
   margin-bottom: 20px;
   text-align: center;
@@ -4330,62 +4377,6 @@ section {
   margin-right: 10px;
   margin-left: 10px;
 }
-/* Featurettes
-------------------------- */
-.featurette-divider {
-  margin: 80px 0;
-  /* Space out the Bootstrap <hr> more */
-}
-/* Thin out the marketing headings */
-.featurette-heading {
-  font-weight: 300;
-  line-height: 1;
-  letter-spacing: -1px;
-}
-/* CUSTOMIZE THE CAROUSEL
--------------------------------------------------- */
-/* Carousel base class */
-.carousel {
-  height: 500px;
-}
-/* Since positioning the image, we need to help out the caption */
-.carousel-caption {
-  z-index: 10;
-}
-.carousel-margin {
-  display: none;
-}
-.carousel-phone img {
-  margin: 0 auto;
-}
-/* Declare heights because of positioning of img element */
-.carousel .item {
-  height: 500px;
-  /* background-color: #777; */
-}
-/*
-.carousel-inner > .item > img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  min-width: 100%;
-  height: 500px;
-} */
-.carousel-control.left,
-.carousel-control.right {
-  background-image: none;
-}
-/* TEAM SECTION
--------------------------------------------------- */
-#sectionTeam .media-object {
-  border-radius: 50px;
-  width: 100px;
-  height: 100px;
-}
-#sectionTeam .media,
-#sectionTeam .media:first-child {
-  margin-top: 25px;
-}
 /*
  * Affix and center
  */
@@ -4396,28 +4387,12 @@ section {
     top: 0;
     z-index: 99;
   }
-  .mastfoot {
-    position: fixed;
-    bottom: 0;
-  }
   /* Start the vertical centering */
   .site-wrapper-inner {
     vertical-align: middle;
   }
-  .carousel-text {
-    padding-top: 150px;
-    text-align: left;
-  }
-  .carousel-phone img {
-    margin: 0;
-  }
-  .carousel-margin {
-    display: inherit;
-  }
   /* Handle the widths */
-  .masthead,
-  .mastfoot,
-  .cover-container {
+  .masthead {
     width: 100%;
     /* Must be percentage or pixels for horizontal alignment */
   }
@@ -4426,24 +4401,11 @@ section {
     padding-right: 0;
     padding-left: 0;
   }
-  .featurette {
-    margin-bottom: 50px;
-  }
-  .featurette-heading {
-    font-size: 50px;
-  }
-  .featurette .lead {
-    margin-top: 70px;
-  }
 }
 @media (min-width: 992px) {
   .masthead,
-  .mastfoot,
-  .cover-container,
   .marketing {
-    width: 960px;
-  }
-  .featurette-heading {
-    margin-top: 120px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
