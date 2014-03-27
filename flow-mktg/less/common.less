@@ -61,13 +61,11 @@ h1 {
 
 /* Padding for spacing */
 section {
-	.container;
-  .marketing;
   padding-top: 120px;
 	padding-bottom: 120px;
 }
 .inner {
-  padding: 30px;
+  padding: 15px 0;
 }
 
 /* Sections */
@@ -149,34 +147,6 @@ section {
  * Footer
  */
 
-.mastfoot {
-  color: #999; /* IE8 proofing */
-  color: rgba(255,255,255,.5);
-}
-
-/* MARKETING CONTENT
--------------------------------------------------- */
-
-/* Pad the edges of the mobile views a bit */
-.marketing {
-  padding-right: 15px;
-  padding-left: 15px;
-
-  /* Center align the text within the three columns below the carousel */
-  .col-lg-4 {
-    margin-bottom: 20px;
-    text-align: center;
-  }
-
-  h2 {
-    font-weight: normal;
-  }
-
-  .col-lg-4 p {
-    margin-right: 10px;
-    margin-left: 10px;
-  }
-}
 
 /*
  * Affix and center
@@ -197,18 +167,10 @@ section {
   .masthead {
     width: 100%; /* Must be percentage or pixels for horizontal alignment */
   }
-  /* Remove the edge padding needed for mobile */
-  .marketing {
-    padding-right: 0;
-    padding-left: 0;
-  }
 }
 
 @media (min-width: 992px) {
-  .masthead,
-  .marketing {
-    //width: 960px;
-    margin-left: auto;
-    margin-right: auto;
+  .container {
+    width: 960px;
   }
 }

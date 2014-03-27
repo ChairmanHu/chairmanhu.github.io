@@ -4012,9 +4012,7 @@ input[type="button"].btn-block {
 .navbar-header:before,
 .navbar-header:after,
 .navbar-collapse:before,
-.navbar-collapse:after,
-section:before,
-section:after {
+.navbar-collapse:after {
   content: " ";
   display: table;
 }
@@ -4028,8 +4026,7 @@ section:after {
 .nav:after,
 .navbar:after,
 .navbar-header:after,
-.navbar-collapse:after,
-section:after {
+.navbar-collapse:after {
   clear: both;
 }
 .center-block {
@@ -4231,54 +4228,11 @@ h1 {
 }
 /* Padding for spacing */
 section {
-  margin-right: auto;
-  margin-left: auto;
-  padding-right: 15px;
-  padding-left: 15px;
-  /* Center align the text within the three columns below the carousel */
   padding-top: 120px;
   padding-bottom: 120px;
 }
-@media (min-width: 768px) {
-  section {
-    width: 750px;
-  }
-}
-@media (min-width: 992px) {
-  section {
-    width: 970px;
-  }
-}
-@media (min-width: 1200px) {
-  section {
-    width: 1170px;
-  }
-}
-section > .navbar-header,
-section > .navbar-collapse {
-  margin-right: -15px;
-  margin-left: -15px;
-}
-@media (min-width: 768px) {
-  section > .navbar-header,
-  section > .navbar-collapse {
-    margin-right: 0;
-    margin-left: 0;
-  }
-}
-section .col-lg-4 {
-  margin-bottom: 20px;
-  text-align: center;
-}
-section h2 {
-  font-weight: normal;
-}
-section .col-lg-4 p {
-  margin-right: 10px;
-  margin-left: 10px;
-}
 .inner {
-  padding: 30px;
+  padding: 15px 0;
 }
 /* Sections */
 #sectionKim {
@@ -4353,30 +4307,6 @@ section .col-lg-4 p {
 /*
  * Footer
  */
-.mastfoot {
-  color: #999;
-  /* IE8 proofing */
-  color: rgba(255, 255, 255, 0.5);
-}
-/* MARKETING CONTENT
--------------------------------------------------- */
-/* Pad the edges of the mobile views a bit */
-.marketing {
-  padding-right: 15px;
-  padding-left: 15px;
-  /* Center align the text within the three columns below the carousel */
-}
-.marketing .col-lg-4 {
-  margin-bottom: 20px;
-  text-align: center;
-}
-.marketing h2 {
-  font-weight: normal;
-}
-.marketing .col-lg-4 p {
-  margin-right: 10px;
-  margin-left: 10px;
-}
 /*
  * Affix and center
  */
@@ -4396,16 +4326,9 @@ section .col-lg-4 p {
     width: 100%;
     /* Must be percentage or pixels for horizontal alignment */
   }
-  /* Remove the edge padding needed for mobile */
-  .marketing {
-    padding-right: 0;
-    padding-left: 0;
-  }
 }
 @media (min-width: 992px) {
-  .masthead,
-  .marketing {
-    margin-left: auto;
-    margin-right: auto;
+  .container {
+    width: 960px;
   }
 }
