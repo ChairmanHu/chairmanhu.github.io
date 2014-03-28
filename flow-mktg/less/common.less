@@ -8,6 +8,7 @@
 @turquoise: #27ADC5;
 @blue: #74C0CF;
 @salmon: #D17869;
+@darkgray: #334045;
 
 /* Links */
 a,
@@ -69,12 +70,6 @@ section {
 }
 
 /* Sections */
-#sectionKim {
-	background-color: @salmon;
-}
-#sectionEasy {
-	background-color: @blue;
-}
 .section-lead {
 	margin-bottom: 75px;
 }
@@ -125,7 +120,7 @@ section {
 
 
 /*
- * Cover
+ * Home
  */
 
 #sectionCover {
@@ -141,12 +136,51 @@ section {
     width: 275px;
   }
 }
+#sectionKim {
+  background-color: @salmon;
+}
+#sectionEasy {
+  background-color: @turquoise;
+}
+
+/*
+ * How It Works
+ */
+
+#sectionSteps {
+
+}
+
+#sectionScreenshots {
+  text-align: left;
+
+  .row {
+    border-bottom: dotted 1px white;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+}
 
 
 /*
  * Footer
  */
 
+#footer {
+  background-color: @darkgray;
+  color: #CCC;
+  text-align: left;
+  padding-top: 50px;
+  padding-bottom: 50px;
+
+  a, a:focus, a:hover {
+    color: #fff;
+  }
+  ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
+}
 
 /*
  * Affix and center

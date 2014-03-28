@@ -4235,12 +4235,6 @@ section {
   padding: 15px 0;
 }
 /* Sections */
-#sectionKim {
-  background-color: #d17869;
-}
-#sectionEasy {
-  background-color: #74c0cf;
-}
 .section-lead {
   margin-bottom: 75px;
 }
@@ -4287,7 +4281,7 @@ section {
   }
 }
 /*
- * Cover
+ * Home
  */
 #sectionCover {
   display: table;
@@ -4304,9 +4298,42 @@ section {
   height: 275px;
   width: 275px;
 }
+#sectionKim {
+  background-color: #d17869;
+}
+#sectionEasy {
+  background-color: #27adc5;
+}
+/*
+ * How It Works
+ */
+#sectionScreenshots {
+  text-align: left;
+}
+#sectionScreenshots .row {
+  border-bottom: dotted 1px white;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
 /*
  * Footer
  */
+#footer {
+  background-color: #334045;
+  color: #CCC;
+  text-align: left;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+#footer a,
+#footer a:focus,
+#footer a:hover {
+  color: #fff;
+}
+#footer ul {
+  list-style-type: none;
+  padding-left: 0;
+}
 /*
  * Affix and center
  */
