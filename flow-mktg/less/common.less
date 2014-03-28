@@ -42,9 +42,11 @@ body {
   color: #fff;
   text-align: center;
 }
-h1 {
+h1, h2, h3, h4 {
 	font-family: 'Cardo', serif;
-	font-size: 50px;
+}
+h1 {
+  font-size: 50px;
 }
 
 /* Extra markup and styles for table-esque vertical and horizontal centering */
@@ -91,7 +93,7 @@ section {
   font-size: 16px;
   font-weight: bold;
   color: #fff; /* IE8 proofing */
-  color: rgba(255,255,255,.75);
+  color: rgba(255,255,255,1);
   border-bottom: 2px solid transparent;
 }
 .masthead-nav > li > a:hover,
@@ -104,6 +106,12 @@ section {
 .masthead-nav > .active > a:focus {
   color: #fff;
   border-bottom-color: #fff;
+}
+.nav-cta {
+  border: 1px solid white !important;
+  border-radius: 5px;
+  padding-right: 10px !important;
+  padding-left: 10px !important;
 }
 
 @media (min-width: 768px) {
@@ -135,6 +143,11 @@ section {
 }
 #sectionKim {
   background-color: @salmon;
+
+  blockquote {
+    font-family: 'Cardo', serif;
+    font-style: italic;
+  }
 }
 #sectionEasy {
   background-color: @turquoise;
