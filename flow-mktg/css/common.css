@@ -4203,7 +4203,7 @@ body {
   height: 100%;
   background-color: #27adc5;
   font-family: 'Quicksand', sans-serif;
-  font-size: 16px;
+  font-size: 18px;
 }
 body {
   color: #fff;
@@ -4217,6 +4217,9 @@ h4 {
 }
 h1 {
   font-size: 50px;
+}
+blockquote {
+  font-size: 20px;
 }
 /* Extra markup and styles for table-esque vertical and horizontal centering */
 .site-wrapper {
@@ -4346,6 +4349,7 @@ section {
 #footer {
   background-color: #334045;
   color: #CCC;
+  font-size: 16px;
   text-align: left;
   padding-top: 50px;
   padding-bottom: 50px;
