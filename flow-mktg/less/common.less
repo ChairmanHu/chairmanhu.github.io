@@ -66,9 +66,6 @@ section {
   padding-top: 20px;
   padding-bottom: 20px;
 }
-.inner {
-  padding: 15px 0;
-}
 .section-lead {
 	
 }
@@ -229,6 +226,30 @@ section {
     position: fixed;
     top: 0;
     z-index: 99;
+    color: gray;
+    padding: 4px 0;
+    background-color: white;
+
+    .masthead-nav > li > a {
+      color: #333; /* IE8 proofing */
+      color: rgba(0,0,0,.75);
+    }
+
+    .masthead-nav > li > a:hover,
+    .masthead-nav > li > a:focus {
+      border-bottom-color: rgba(0,0,0,.5);
+    }
+
+    .masthead-nav > .active > a,
+    .masthead-nav > .active > a:hover,
+    .masthead-nav > .active > a:focus {
+      color: #333;
+      border-bottom-color: #666;
+    }
+
+    .nav-cta {
+      border: 1px solid gray !important;
+    }
   }
   /* Start the vertical centering */
   .site-wrapper-inner {

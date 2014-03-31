@@ -4235,9 +4235,6 @@ section {
   padding-top: 20px;
   padding-bottom: 20px;
 }
-.inner {
-  padding: 15px 0;
-}
 /*
  * Header
  */
@@ -4371,6 +4368,27 @@ section {
     position: fixed;
     top: 0;
     z-index: 99;
+    color: gray;
+    padding: 4px 0;
+    background-color: white;
+  }
+  .masthead .masthead-nav > li > a {
+    color: #333;
+    /* IE8 proofing */
+    color: rgba(0, 0, 0, 0.75);
+  }
+  .masthead .masthead-nav > li > a:hover,
+  .masthead .masthead-nav > li > a:focus {
+    border-bottom-color: rgba(0, 0, 0, 0.5);
+  }
+  .masthead .masthead-nav > .active > a,
+  .masthead .masthead-nav > .active > a:hover,
+  .masthead .masthead-nav > .active > a:focus {
+    color: #333;
+    border-bottom-color: #666;
+  }
+  .masthead .nav-cta {
+    border: 1px solid gray !important;
   }
   /* Start the vertical centering */
   .site-wrapper-inner {
