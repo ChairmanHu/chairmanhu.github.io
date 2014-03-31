@@ -4360,6 +4360,16 @@ section {
   padding-left: 0;
 }
 /*
+ * Mailchimp Style Overrides
+ */
+#mc_embed_signup {
+  clear: left;
+  font: 14px Helvetica, Arial, sans-serif;
+}
+#mc_embed_signup input {
+  color: #333;
+}
+/*
  * Affix and center
  */
 @media (min-width: 768px) {
