@@ -10,6 +10,10 @@
 @salmon: #D17869;
 @darkgray: #334045;
 
+.text-invert {
+  color: #FFF;
+}
+
 /* Links */
 a,
 a:focus,
@@ -21,10 +25,10 @@ a:hover {
 .btn-default,
 .btn-default:hover,
 .btn-default:focus {
-  color: #333;
+  color: white;
   text-shadow: none; /* Prevent inheritence from `body` */
-  background-color: #fff;
-  border: 1px solid #fff;
+  background-color: @salmon;
+  border: 1px solid @salmon;
 }
 
 /*
@@ -34,12 +38,11 @@ a:hover {
 html,
 body {
   height: 100%;
-  background-color: @turquoise;
   font-family: 'Quicksand', sans-serif;
   font-size: 18px;
 }
 body {
-  color: #fff;
+  color: @darkgray;
   text-align: center;
 }
 h1, h2, h3, h4 {
@@ -129,6 +132,8 @@ section {
  */
 
 #sectionCover {
+  background-color: @turquoise;
+
   .site-wrapper;
 
   .btn-lg {
@@ -142,7 +147,7 @@ section {
   }
 }
 #sectionKim {
-  background-color: @salmon;
+  background-image:url('../assets/lightpaperfibers.png');
 
   blockquote {
     font-family: 'Cardo', serif;
@@ -158,6 +163,8 @@ section {
  */
 
 #sectionSteps {
+  background-color: @turquoise;
+
   .fa {
     font-size: 100px;
     margin-bottom: 20px;
@@ -166,10 +173,10 @@ section {
 
 #sectionScreenshots {
   text-align: left;
-  background-color: @salmon;
+  background-image:url('../assets/lightpaperfibers.png');
 
   .row {
-    border-bottom: dotted 1px white;
+    border-bottom: dotted 1px @darkgray;
 
     .col-md-8 {
 
@@ -190,10 +197,20 @@ section {
  */
 
 #sectionPricing {
+  background-color: @turquoise;
+
   img {
     width: 100%;
     margin-top: 40px;
   }
+}
+
+/*
+ * Pricing
+ */
+
+#sectionSignup {
+  background-color: @turquoise;
 }
 
 
