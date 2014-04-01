@@ -4240,6 +4240,9 @@ section {
   padding-top: 20px;
   padding-bottom: 20px;
 }
+.cover-padding {
+  padding-top: 140px;
+}
 /*
  * Header
  */
@@ -4351,7 +4354,7 @@ section {
   margin-top: 40px;
 }
 /*
- * Pricing
+ * Sign Up
  */
 #sectionSignup {
   background-color: #27adc5;
@@ -4446,11 +4449,16 @@ section {
 }
 @media (min-width: 992px) {
   section {
-    padding-top: 120px;
-    padding-bottom: 120px;
+    padding-top: 80px;
+    padding-bottom: 80px;
   }
   #sectionCover {
     padding-top: 200px;
+  }
+  #sectionSteps,
+  #sectionPricing,
+  #sectionSignup {
+    padding-top: 140px;
   }
   .section-lead {
     margin-bottom: 75px;
