@@ -4370,7 +4370,7 @@ section {
  * Sign Up
  */
 #sectionSignup {
-  background-color: #27adc5;
+  background-color: #e2e1d7;
 }
 @media (min-width: 992px) {
   #sectionScreenshots .row {
@@ -4380,6 +4380,22 @@ section {
   #sectionScreenshots .row .col-md-8 {
     padding-top: 100px;
   }
+}
+/*
+ * FAQ
+ */
+#sectionFAQ {
+  background-image: url('../assets/lightpaperfibers.png');
+}
+#sectionFAQ .row {
+  margin-bottom: 40px;
+}
+#sectionFAQ .row h4 {
+  padding-top: 14px;
+  border-top: 1px solid #CCC;
+}
+#sectionFAQ .row p {
+  font-size: 14px;
 }
 /*
  * Footer
@@ -4414,9 +4430,8 @@ section {
 #mc_embed_signup {
   clear: left;
   font: 14px Helvetica, Arial, sans-serif;
-}
-#mc_embed_signup input {
-  color: #333;
+  background-color: white;
+  border-radius: 3px;
 }
 /*
  * Affix and center
