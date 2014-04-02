@@ -4317,8 +4317,21 @@ section {
   font-family: 'Cardo', serif;
   font-style: italic;
 }
-#sectionEasy {
-  background-color: #27adc5;
+#sectionKim a {
+  margin-top: 20px;
+}
+#sectionWhy {
+  text-align: left;
+  background-color: #e2e1d7;
+}
+#sectionWhy .lead {
+  margin-bottom: 50px;
+}
+#sectionWhy .row {
+  margin-bottom: 50px;
+}
+#sectionWhy .row img {
+  width: 100%;
 }
 /*
  * How It Works
@@ -4453,7 +4466,13 @@ section {
     padding-bottom: 80px;
   }
   #sectionCover {
-    padding-top: 200px;
+    padding-top: 140px;
+  }
+  #sectionCover h1 {
+    margin-top: 0;
+  }
+  #sectionCover p.lead {
+    padding: 20px 0;
   }
   #sectionSteps,
   #sectionPricing,
