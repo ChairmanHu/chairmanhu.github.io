@@ -4243,6 +4243,23 @@ section {
 .cover-padding {
   padding-top: 140px;
 }
+/* Widgets */
+.w-seniorliving {
+  color: white;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 5px;
+  padding: 15px 10px;
+  margin-top: 60px;
+}
+.w-seniorliving p {
+  font-size: 14px;
+  margin-bottom: 0;
+}
+.w-seniorliving .col-md-1 {
+  font-size: 34px;
+  line-height: normal;
+  text-align: center;
+}
 /*
  * Header
  */
@@ -4307,8 +4324,9 @@ section {
   font-weight: bold;
 }
 #sectionCover img {
-  height: 275px;
-  width: 275px;
+  max-width: 450px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 #sectionKim {
   background-image: url('../assets/lightpaperfibers.png');
@@ -4337,7 +4355,7 @@ section {
  * How It Works
  */
 #sectionSteps {
-  background-color: #27adc5;
+  background-color: #63a69f;
 }
 #sectionSteps .fa {
   font-size: 100px;
@@ -4360,17 +4378,21 @@ section {
  * Pricing
  */
 #sectionPricing {
-  background-color: #27adc5;
+  background-color: #7b576d;
 }
-#sectionPricing img {
+#sectionPricing .col-md-4 {
+  text-align: center;
+}
+#sectionPricing .col-md-4 img {
   width: 100%;
-  margin-top: 40px;
+  margin-top: 60px;
 }
 /*
  * Sign Up
  */
 #sectionSignup {
-  background-color: #e2e1d7;
+  color: #FFF;
+  background-color: #b87673;
 }
 @media (min-width: 992px) {
   #sectionScreenshots .row {
@@ -4429,9 +4451,15 @@ section {
  */
 #mc_embed_signup {
   clear: left;
+  color: #334045;
   font: 14px Helvetica, Arial, sans-serif;
   background-color: white;
   border-radius: 3px;
+  padding: 10px 20px;
+}
+#mc_embed_signup h2 {
+  font-weight: normal;
+  margin-bottom: 20px;
 }
 /*
  * Affix and center
@@ -4481,13 +4509,13 @@ section {
     padding-bottom: 80px;
   }
   #sectionCover {
-    padding-top: 140px;
+    padding-top: 100px;
   }
   #sectionCover h1 {
     margin-top: 0;
   }
   #sectionCover p.lead {
-    padding: 20px 0;
+    padding: 10px 0;
   }
   #sectionSteps,
   #sectionPricing,

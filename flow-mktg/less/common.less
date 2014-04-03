@@ -7,8 +7,11 @@
 /* Colors */
 @turquoise: #27ADC5;
 @blue: #74C0CF;
+@green: #63A69F;
 @tan: #E2E1D7;
+@eggplant: #7B576D;
 @salmon: #D17869;
+@salmon2: #B87673;
 @darkgray: #334045;
 @paper: url('../assets/lightpaperfibers.png');
 
@@ -82,6 +85,27 @@ section {
   padding-top: 140px;
 }
 
+/* Widgets */
+
+.w-seniorliving {
+  color: white;
+  background-color: rgba(255,255,255,.1);
+  border-radius: 5px;
+  padding: 15px 10px;
+  margin-top: 60px;
+
+  p {
+    font-size: 14px;
+    margin-bottom: 0;
+  }
+
+  .col-md-1 {
+    font-size: 34px;
+    line-height: normal;
+    text-align: center;
+  }
+}
+
 /*
  * Header
  */
@@ -148,8 +172,9 @@ section {
   }
 
   img {
-    height: 275px;
-    width: 275px;
+    max-width: 450px;
+    margin-top: 10px;
+    margin-bottom: 10px;
   }
 }
 #sectionKim {
@@ -186,7 +211,7 @@ section {
  */
 
 #sectionSteps {
-  background-color: @turquoise;
+  background-color: @green;
 
   .fa {
     font-size: 100px;
@@ -220,11 +245,15 @@ section {
  */
 
 #sectionPricing {
-  background-color: @turquoise;
+  background-color: @eggplant;
 
-  img {
-    width: 100%;
-    margin-top: 40px;
+  .col-md-4 {
+    text-align: center;
+    
+    img {
+      width: 100%;
+      margin-top: 60px;
+    }
   }
 }
 
@@ -233,7 +262,8 @@ section {
  */
 
 #sectionSignup {
-  background-color: @tan;
+  .text-invert;
+  background-color: @salmon2;
 }
 
 
@@ -306,9 +336,16 @@ section {
 
 #mc_embed_signup {
   clear: left;
+  color: @darkgray;
   font: 14px Helvetica,Arial,sans-serif;
   background-color: white;
   border-radius: 3px;
+  padding: 10px 20px;
+
+  h2 {
+    font-weight: normal;
+    margin-bottom: 20px;
+  }
 }
 
 /*
@@ -363,13 +400,13 @@ section {
     padding-bottom: 80px;
   }
   #sectionCover {
-    .cover-padding;
+    padding-top: 100px;
 
     h1 {
       margin-top: 0;
     }
     p.lead {
-      padding: 20px 0;
+      padding: 10px 0;
     }
   }
   #sectionSteps, #sectionPricing, #sectionSignup {
