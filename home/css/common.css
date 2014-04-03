@@ -4240,6 +4240,7 @@ blockquote {
   padding: 20px;
   margin-bottom: 20px;
   font-size: 16px;
+  text-align: center;
 }
 .site-wrapper img {
   width: 80px;
@@ -4328,6 +4329,7 @@ section {
   padding: 20px;
   margin-bottom: 20px;
   font-size: 16px;
+  text-align: center;
 }
 #sectionCover img {
   width: 80px;
