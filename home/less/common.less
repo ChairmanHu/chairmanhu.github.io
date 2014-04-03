@@ -1,0 +1,436 @@
+@import "bootstrap-common.less";
+
+/*
+ * Globals
+ */
+
+/* Colors */
+@turquoise: #27ADC5;
+@blue: #74C0CF;
+@green: #63A69F;
+@tan: #E2E1D7;
+@eggplant: #7B576D;
+@salmon: #D17869;
+@salmon2: #B87673;
+@darkgray: #334045;
+@paper: url('../assets/lightpaperfibers.png');
+
+.text-invert {
+  color: #FFF;
+}
+
+/* Links */
+a,
+a:focus,
+a:hover {
+  color: #fff;
+}
+
+/* Custom default button */
+.btn-default,
+.btn-default:hover,
+.btn-default:focus {
+  color: white;
+  text-shadow: none; /* Prevent inheritence from `body` */
+  background-color: @salmon;
+  border: 1px solid @salmon;
+}
+
+/*
+ * Base structure
+ */
+
+html,
+body {
+  height: 100%;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 18px;
+}
+body {
+  color: @darkgray;
+  text-align: center;
+}
+h1, h2, h3, h4 {
+	font-family: 'Cardo', serif;
+}
+h1 {
+  font-size: 50px;
+}
+blockquote {
+  font-size: 20px;
+}
+
+/* Extra markup and styles for table-esque vertical and horizontal centering */
+.site-wrapper {
+  display: table;
+  width: 100%;
+  height: 100%; /* For at least Firefox */
+  min-height: 100%;
+}
+.site-wrapper-inner {
+  display: table-cell;
+  vertical-align: top;
+}
+
+/* Sections */
+section {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.section-lead {
+	
+}
+
+.cover-padding {
+  padding-top: 140px;
+}
+
+/* Widgets */
+
+.w-seniorliving {
+  color: white;
+  border-radius: 5px;
+  border: 1px dashed white;
+  padding: 15px 10px;
+  margin-top: 60px;
+
+  p {
+    font-size: 14px;
+    margin-bottom: 0;
+
+    a {
+      color: @blue;
+    }
+  }
+
+  .col-md-1 {
+    font-size: 34px;
+    line-height: normal;
+    text-align: center;
+  }
+}
+
+/*
+ * Header
+ */
+.masthead-brand {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.masthead-nav > li {
+  display: inline-block;
+}
+.masthead-nav > li + li {
+  margin-left: 20px;
+}
+.masthead-nav > li > a {
+  padding-right: 0;
+  padding-left: 0;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff; /* IE8 proofing */
+  color: rgba(255,255,255,1);
+  border-bottom: 2px solid transparent;
+}
+.masthead-nav > li > a:hover,
+.masthead-nav > li > a:focus {
+  background-color: transparent;
+  border-bottom-color: rgba(255,255,255,.25);
+}
+.masthead-nav > .active > a,
+.masthead-nav > .active > a:hover,
+.masthead-nav > .active > a:focus {
+  color: #fff;
+  border-bottom-color: #fff;
+}
+.nav-cta {
+  border: 1px solid white !important;
+  border-radius: 5px;
+  padding-right: 10px !important;
+  padding-left: 10px !important;
+}
+
+@media (min-width: 768px) {
+  .masthead-brand {
+    float: left;
+  }
+  .masthead-nav {
+    float: right;
+  }
+}
+
+
+/*
+ * Home
+ */
+
+#sectionCover {
+  background-color: @turquoise;
+
+  .site-wrapper;
+
+  .btn-lg {
+    padding: 10px 20px;
+    font-weight: bold;
+  }
+
+  img {
+    max-width: 450px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+}
+#sectionKim {
+  background-image: @paper;
+
+  blockquote {
+    font-family: 'Cardo', serif;
+    font-style: italic;
+  }
+
+  a {
+    margin-top: 20px;
+  }
+}
+#sectionWhy {
+  .text-left;
+  background-color: @tan;
+
+  .lead {
+    margin-bottom: 50px;
+  }
+
+  .row {
+    margin-bottom: 50px;
+
+    img {
+      width: 100%;
+    }
+  }
+}
+
+/*
+ * How It Works
+ */
+
+#sectionSteps {
+  background-color: @green;
+
+  .fa {
+    font-size: 100px;
+    margin-bottom: 20px;
+  }
+}
+
+#sectionScreenshots {
+  text-align: left;
+  background-image: @paper;
+
+  .row {
+    border-bottom: dotted 1px @darkgray;
+
+    .col-md-8 {
+
+    }
+    .col-md-4 {
+      text-align: center;
+    }
+    .col-md-12 {
+      img {
+        width: 100%;
+      }
+    }
+  }
+
+  div a {
+    margin-top: 40px;
+  }
+}
+
+/*
+ * Pricing
+ */
+
+#sectionPricing {
+  background-color: @eggplant;
+
+  .col-md-4 {
+    text-align: center;
+    background-color: rgba(255,255,255,0.1);
+    border-radius: 5px;
+    padding: 20px;
+    
+    img {
+      width: 100%;
+    }
+  }
+}
+
+/*
+ * Sign Up
+ */
+
+#sectionSignup {
+  .text-invert;
+  background-color: @salmon2;
+}
+
+
+@media (min-width: 992px) {
+  #sectionScreenshots {
+    .row {
+      padding-top: 40px;
+      padding-bottom: 40px;
+
+      .col-md-8 {
+        padding-top: 100px;
+      }
+    }
+  }
+}
+
+/*
+ * FAQ
+ */
+
+ #sectionFAQ {
+  background-image: @paper;
+  .row {
+    margin-bottom: 40px;
+
+    h4 {
+      padding-top: 14px;
+      border-top: 1px solid #CCC;
+    }
+
+    p {
+      font-size: 14px;
+    }
+  }
+ }
+
+
+/*
+ * Footer
+ */
+
+#footer {
+  background-color: @darkgray;
+  color: #CCC;
+  font-size: 16px;
+  text-align: left;
+  padding-top: 50px;
+  padding-bottom: 50px;
+
+  a, a:focus, a:hover {
+    color: #CCC;
+  }
+  ul {
+    list-style-type: none;
+    padding-left: 0;
+
+    lh {
+      display: block;
+      margin-bottom: 16px;
+    }
+    .contact {
+      a {
+        color: @blue;
+      }
+    }
+  }
+  img {
+    width: 50%;
+  }
+}
+
+/*
+ * Mailchimp Style Overrides
+ */
+
+#mc_embed_signup {
+  clear: left;
+  color: @darkgray;
+  font: 14px Helvetica,Arial,sans-serif;
+  background-color: white;
+  border-radius: 3px;
+  padding: 10px 20px;
+
+  h2 {
+    font-weight: normal;
+    margin-bottom: 20px;
+  }
+}
+
+/*
+ * Affix and center
+ */
+
+@media (min-width: 768px) {
+  /* Pull out the header and footer */
+  .masthead {
+    position: fixed;
+    top: 0;
+    z-index: 99;
+    color: gray;
+    padding: 4px 0;
+    background-color: white;
+    box-shadow: 0 1px 3px rgba(0,0,0,.5);
+
+    .masthead-nav > li > a {
+      color: #333; /* IE8 proofing */
+      color: rgba(0,0,0,.75);
+    }
+
+    .masthead-nav > li > a:hover,
+    .masthead-nav > li > a:focus {
+      border-bottom-color: rgba(0,0,0,.5);
+    }
+
+    .masthead-nav > .active > a,
+    .masthead-nav > .active > a:hover,
+    .masthead-nav > .active > a:focus {
+      color: #333;
+      border-bottom-color: #666;
+    }
+
+    .nav-cta {
+      border: 1px solid gray !important;
+    }
+  }
+  /* Start the vertical centering */
+  .site-wrapper-inner {
+    vertical-align: middle;
+  }
+  /* Handle the widths */
+  .masthead {
+    width: 100%; /* Must be percentage or pixels for horizontal alignment */
+  }
+}
+
+@media (min-width: 992px) {
+  section {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+  #sectionCover {
+    padding-top: 10c0px;
+
+    h1 {
+      margin-top: 0;
+    }
+    p.lead {
+      padding: 10px 0;
+    }
+  }
+  #sectionSteps, #sectionPricing, #sectionSignup {
+    .cover-padding;
+  }
+  .section-lead {
+    margin-bottom: 75px;
+  }
+  .container {
+    width: 960px;
+  }
+}
