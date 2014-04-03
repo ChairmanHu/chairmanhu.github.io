@@ -4186,7 +4186,8 @@ input[type="button"].btn-block {
 a,
 a:focus,
 a:hover {
-  color: #fff;
+  color: #334045;
+  text-decoration: none;
 }
 /* Custom default button */
 .btn-default,
@@ -4209,7 +4210,8 @@ body {
 }
 body {
   color: #334045;
-  text-align: center;
+  text-align: left;
+  background-image: url('../assets/ricepaper2.png');
 }
 h1,
 h2,
@@ -4231,9 +4233,26 @@ blockquote {
   /* For at least Firefox */
   min-height: 100%;
 }
+.site-wrapper a {
+  background-color: white;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+  display: block;
+  padding: 20px;
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+.site-wrapper img {
+  width: 80px;
+  border-radius: 5px;
+}
 .site-wrapper-inner {
   display: table-cell;
   vertical-align: top;
+}
+.description {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-bottom: 20px;
 }
 /* Sections */
 section {
@@ -4242,26 +4261,6 @@ section {
 }
 .cover-padding {
   padding-top: 140px;
-}
-/* Widgets */
-.w-seniorliving {
-  color: white;
-  border-radius: 5px;
-  border: 1px dashed white;
-  padding: 15px 10px;
-  margin-top: 60px;
-}
-.w-seniorliving p {
-  font-size: 14px;
-  margin-bottom: 0;
-}
-.w-seniorliving p a {
-  color: #74c0cf;
-}
-.w-seniorliving .col-md-1 {
-  font-size: 34px;
-  line-height: normal;
-  text-align: center;
 }
 /*
  * Header
@@ -4322,6 +4321,18 @@ section {
   /* For at least Firefox */
   min-height: 100%;
 }
+#sectionCover a {
+  background-color: white;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+  display: block;
+  padding: 20px;
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+#sectionCover img {
+  width: 80px;
+  border-radius: 5px;
+}
 #sectionCover .btn-lg {
   padding: 10px 20px;
   font-weight: bold;
@@ -4330,147 +4341,6 @@ section {
   max-width: 450px;
   margin-top: 10px;
   margin-bottom: 10px;
-}
-#sectionKim {
-  background-image: url('../assets/lightpaperfibers.png');
-}
-#sectionKim blockquote {
-  font-family: 'Cardo', serif;
-  font-style: italic;
-}
-#sectionKim a {
-  margin-top: 20px;
-}
-#sectionWhy {
-  text-align: left;
-  background-color: #e2e1d7;
-}
-#sectionWhy .lead {
-  margin-bottom: 50px;
-}
-#sectionWhy .row {
-  margin-bottom: 50px;
-}
-#sectionWhy .row img {
-  width: 100%;
-}
-/*
- * How It Works
- */
-#sectionSteps {
-  background-color: #63a69f;
-}
-#sectionSteps .fa {
-  font-size: 100px;
-  margin-bottom: 20px;
-}
-#sectionScreenshots {
-  text-align: left;
-  background-image: url('../assets/lightpaperfibers.png');
-}
-#sectionScreenshots .row {
-  border-bottom: dotted 1px #334045;
-}
-#sectionScreenshots .row .col-md-4 {
-  text-align: center;
-}
-#sectionScreenshots .row .col-md-12 img {
-  width: 100%;
-}
-#sectionScreenshots div a {
-  margin-top: 40px;
-}
-/*
- * Pricing
- */
-#sectionPricing {
-  background-color: #7b576d;
-}
-#sectionPricing .col-md-4 {
-  text-align: center;
-  background-color: rgba(255, 255, 255, 0.1);
-  border-radius: 5px;
-  padding: 20px;
-}
-#sectionPricing .col-md-4 img {
-  width: 100%;
-}
-/*
- * Sign Up
- */
-#sectionSignup {
-  color: #FFF;
-  background-color: #b87673;
-}
-@media (min-width: 992px) {
-  #sectionScreenshots .row {
-    padding-top: 40px;
-    padding-bottom: 40px;
-  }
-  #sectionScreenshots .row .col-md-8 {
-    padding-top: 100px;
-  }
-}
-/*
- * FAQ
- */
-#sectionFAQ {
-  background-image: url('../assets/lightpaperfibers.png');
-}
-#sectionFAQ .row {
-  margin-bottom: 40px;
-}
-#sectionFAQ .row h4 {
-  padding-top: 14px;
-  border-top: 1px solid #CCC;
-}
-#sectionFAQ .row p {
-  font-size: 14px;
-}
-/*
- * Footer
- */
-#footer {
-  background-color: #334045;
-  color: #CCC;
-  font-size: 16px;
-  text-align: left;
-  padding-top: 50px;
-  padding-bottom: 50px;
-}
-#footer a,
-#footer a:focus,
-#footer a:hover {
-  color: #CCC;
-}
-#footer ul {
-  list-style-type: none;
-  padding-left: 0;
-}
-#footer ul lh {
-  display: block;
-  margin-bottom: 16px;
-}
-#footer ul .contact a {
-  color: #74c0cf;
-}
-#footer img {
-  width: 50%;
-}
-/*
- * Mailchimp Style Overrides
- */
-#mc_embed_signup {
-  clear: left;
-  color: #334045;
-  font: 14px Helvetica, Arial, sans-serif;
-  background-color: white;
-  border-radius: 3px;
-  padding: 10px 20px;
-}
-#mc_embed_signup h2 {
-  font-weight: normal;
-  margin-bottom: 20px;
 }
 /*
  * Affix and center
@@ -4504,6 +4374,11 @@ section {
   .masthead .nav-cta {
     border: 1px solid gray !important;
   }
+  .site-wrapper {
+    width: 700px;
+    margin: 0 auto;
+    text-align: center;
+  }
   /* Start the vertical centering */
   .site-wrapper-inner {
     vertical-align: middle;
@@ -4513,30 +4388,21 @@ section {
     width: 100%;
     /* Must be percentage or pixels for horizontal alignment */
   }
+  .description {
+    padding: 0;
+    margin-bottom: 40px;
+  }
 }
 @media (min-width: 992px) {
-  section {
-    padding-top: 80px;
-    padding-bottom: 80px;
+  .site-wrapper a {
+    height: 300px;
+    -webkit-transition: box-shadow 0.3s ease-in-out 0s;
+    -moz-transition: box-shadow 0.3s ease-in-out 0s;
+    -o-transition: box-shadow 0.3s ease-in-out 0s;
+    -ms-transition: box-shadow 0.3s ease-in-out 0s;
+    transition: box-shadow 0.3s ease-in-out 0s;
   }
-  #sectionCover {
-    padding-top: 10c0px;
-  }
-  #sectionCover h1 {
-    margin-top: 0;
-  }
-  #sectionCover p.lead {
-    padding: 10px 0;
-  }
-  #sectionSteps,
-  #sectionPricing,
-  #sectionSignup {
-    padding-top: 140px;
-  }
-  .section-lead {
-    margin-bottom: 75px;
-  }
-  .container {
-    width: 960px;
+  .site-wrapper a:hover {
+    box-shadow: 0 1px 3px 2px rgba(0, 0, 0, 0.2);
   }
 }

@@ -13,7 +13,9 @@
 @salmon: #D17869;
 @salmon2: #B87673;
 @darkgray: #334045;
+
 @paper: url('../assets/lightpaperfibers.png');
+@ricepaper: url('../assets/ricepaper2.png');
 
 .text-invert {
   color: #FFF;
@@ -23,7 +25,8 @@
 a,
 a:focus,
 a:hover {
-  color: #fff;
+  color: @darkgray;
+  text-decoration: none;
 }
 
 /* Custom default button */
@@ -48,7 +51,8 @@ body {
 }
 body {
   color: @darkgray;
-  text-align: center;
+  text-align: left;
+  background-image: @ricepaper;
 }
 h1, h2, h3, h4 {
 	font-family: 'Cardo', serif;
@@ -66,10 +70,29 @@ blockquote {
   width: 100%;
   height: 100%; /* For at least Firefox */
   min-height: 100%;
+
+  a {
+    background-color: white;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.2);
+    display: block;
+    padding: 20px;
+    margin-bottom: 20px;
+    font-size: 16px;
+  }
+
+  img {
+    width: 80px;
+    border-radius: 5px;
+  }
 }
 .site-wrapper-inner {
   display: table-cell;
   vertical-align: top;
+}
+.description {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-bottom: 20px;
 }
 
 /* Sections */
@@ -85,30 +108,7 @@ section {
   padding-top: 140px;
 }
 
-/* Widgets */
 
-.w-seniorliving {
-  color: white;
-  border-radius: 5px;
-  border: 1px dashed white;
-  padding: 15px 10px;
-  margin-top: 60px;
-
-  p {
-    font-size: 14px;
-    margin-bottom: 0;
-
-    a {
-      color: @blue;
-    }
-  }
-
-  .col-md-1 {
-    font-size: 34px;
-    line-height: normal;
-    text-align: center;
-  }
-}
 
 /*
  * Header
@@ -181,187 +181,6 @@ section {
     margin-bottom: 10px;
   }
 }
-#sectionKim {
-  background-image: @paper;
-
-  blockquote {
-    font-family: 'Cardo', serif;
-    font-style: italic;
-  }
-
-  a {
-    margin-top: 20px;
-  }
-}
-#sectionWhy {
-  .text-left;
-  background-color: @tan;
-
-  .lead {
-    margin-bottom: 50px;
-  }
-
-  .row {
-    margin-bottom: 50px;
-
-    img {
-      width: 100%;
-    }
-  }
-}
-
-/*
- * How It Works
- */
-
-#sectionSteps {
-  background-color: @green;
-
-  .fa {
-    font-size: 100px;
-    margin-bottom: 20px;
-  }
-}
-
-#sectionScreenshots {
-  text-align: left;
-  background-image: @paper;
-
-  .row {
-    border-bottom: dotted 1px @darkgray;
-
-    .col-md-8 {
-
-    }
-    .col-md-4 {
-      text-align: center;
-    }
-    .col-md-12 {
-      img {
-        width: 100%;
-      }
-    }
-  }
-
-  div a {
-    margin-top: 40px;
-  }
-}
-
-/*
- * Pricing
- */
-
-#sectionPricing {
-  background-color: @eggplant;
-
-  .col-md-4 {
-    text-align: center;
-    background-color: rgba(255,255,255,0.1);
-    border-radius: 5px;
-    padding: 20px;
-    
-    img {
-      width: 100%;
-    }
-  }
-}
-
-/*
- * Sign Up
- */
-
-#sectionSignup {
-  .text-invert;
-  background-color: @salmon2;
-}
-
-
-@media (min-width: 992px) {
-  #sectionScreenshots {
-    .row {
-      padding-top: 40px;
-      padding-bottom: 40px;
-
-      .col-md-8 {
-        padding-top: 100px;
-      }
-    }
-  }
-}
-
-/*
- * FAQ
- */
-
- #sectionFAQ {
-  background-image: @paper;
-  .row {
-    margin-bottom: 40px;
-
-    h4 {
-      padding-top: 14px;
-      border-top: 1px solid #CCC;
-    }
-
-    p {
-      font-size: 14px;
-    }
-  }
- }
-
-
-/*
- * Footer
- */
-
-#footer {
-  background-color: @darkgray;
-  color: #CCC;
-  font-size: 16px;
-  text-align: left;
-  padding-top: 50px;
-  padding-bottom: 50px;
-
-  a, a:focus, a:hover {
-    color: #CCC;
-  }
-  ul {
-    list-style-type: none;
-    padding-left: 0;
-
-    lh {
-      display: block;
-      margin-bottom: 16px;
-    }
-    .contact {
-      a {
-        color: @blue;
-      }
-    }
-  }
-  img {
-    width: 50%;
-  }
-}
-
-/*
- * Mailchimp Style Overrides
- */
-
-#mc_embed_signup {
-  clear: left;
-  color: @darkgray;
-  font: 14px Helvetica,Arial,sans-serif;
-  background-color: white;
-  border-radius: 3px;
-  padding: 10px 20px;
-
-  h2 {
-    font-weight: normal;
-    margin-bottom: 20px;
-  }
-}
 
 /*
  * Affix and center
@@ -399,6 +218,14 @@ section {
       border: 1px solid gray !important;
     }
   }
+  
+  .site-wrapper {
+    width: 700px;
+    margin: 0 auto;
+    text-align: center;
+
+  }
+
   /* Start the vertical centering */
   .site-wrapper-inner {
     vertical-align: middle;
@@ -407,30 +234,26 @@ section {
   .masthead {
     width: 100%; /* Must be percentage or pixels for horizontal alignment */
   }
+
+  .description {
+    padding: 0;
+    margin-bottom: 40px;
+  }
 }
 
 @media (min-width: 992px) {
-  section {
-    padding-top: 80px;
-    padding-bottom: 80px;
-  }
-  #sectionCover {
-    padding-top: 10c0px;
+  .site-wrapper {
+    a {
+      height: 300px;
+      -webkit-transition: box-shadow 0.3s ease-in-out 0s;
+      -moz-transition: box-shadow 0.3s ease-in-out 0s;
+      -o-transition: box-shadow 0.3s ease-in-out 0s;
+      -ms-transition: box-shadow 0.3s ease-in-out 0s;
+      transition: box-shadow 0.3s ease-in-out 0s;
+    }
 
-    h1 {
-      margin-top: 0;
+    a:hover {
+      box-shadow: 0 1px 3px 2px rgba(0,0,0,0.2);
     }
-    p.lead {
-      padding: 10px 0;
-    }
-  }
-  #sectionSteps, #sectionPricing, #sectionSignup {
-    .cover-padding;
-  }
-  .section-lead {
-    margin-bottom: 75px;
-  }
-  .container {
-    width: 960px;
   }
 }
