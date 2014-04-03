@@ -4246,14 +4246,17 @@ section {
 /* Widgets */
 .w-seniorliving {
   color: white;
-  background-color: rgba(255, 255, 255, 0.1);
   border-radius: 5px;
+  border: 1px dashed white;
   padding: 15px 10px;
   margin-top: 60px;
 }
 .w-seniorliving p {
   font-size: 14px;
   margin-bottom: 0;
+}
+.w-seniorliving p a {
+  color: #74c0cf;
 }
 .w-seniorliving .col-md-1 {
   font-size: 34px;
@@ -4374,6 +4377,9 @@ section {
 #sectionScreenshots .row .col-md-12 img {
   width: 100%;
 }
+#sectionScreenshots div a {
+  margin-top: 40px;
+}
 /*
  * Pricing
  */
@@ -4382,10 +4388,12 @@ section {
 }
 #sectionPricing .col-md-4 {
   text-align: center;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 5px;
+  padding: 20px;
 }
 #sectionPricing .col-md-4 img {
   width: 100%;
-  margin-top: 60px;
 }
 /*
  * Sign Up
@@ -4442,6 +4450,9 @@ section {
 #footer ul lh {
   display: block;
   margin-bottom: 16px;
+}
+#footer ul .contact a {
+  color: #74c0cf;
 }
 #footer img {
   width: 50%;
@@ -4509,7 +4520,7 @@ section {
     padding-bottom: 80px;
   }
   #sectionCover {
-    padding-top: 100px;
+    padding-top: 10c0px;
   }
   #sectionCover h1 {
     margin-top: 0;
