@@ -4281,9 +4281,9 @@ section {
   padding-left: 0;
   font-size: 16px;
   font-weight: bold;
-  color: #fff;
+  color: #333;
   /* IE8 proofing */
-  color: #ffffff;
+  color: rgba(0, 0, 0, 0.5);
   border-bottom: 2px solid transparent;
 }
 .masthead-nav > li > a:hover,
@@ -4294,8 +4294,8 @@ section {
 .masthead-nav > .active > a,
 .masthead-nav > .active > a:hover,
 .masthead-nav > .active > a:focus {
-  color: #fff;
-  border-bottom-color: #fff;
+  color: #333;
+  border-bottom-color: #666;
 }
 .nav-cta {
   border: 1px solid white !important;
@@ -4328,6 +4328,7 @@ section {
 }
 #sectionCover img {
   max-width: 450px;
+  width: 100%;
   margin-top: 10px;
   margin-bottom: 10px;
 }
