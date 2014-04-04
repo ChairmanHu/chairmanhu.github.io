@@ -74,15 +74,25 @@ blockquote {
 
 /* Sections */
 section {
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.mobile {
+  display: block;
+}
+.full {
+  display: none;
 }
 .section-lead {
 	
 }
-
 .cover-padding {
-  padding-top: 140px;
+  padding-top: 120px;
+}
+.btn-lg {
+  padding: 10px 20px;
+  font-weight: bold;
+  white-space: normal;
 }
 
 /* Widgets */
@@ -170,11 +180,6 @@ section {
 
   .site-wrapper;
 
-  .btn-lg {
-    padding: 10px 20px;
-    font-weight: bold;
-  }
-
   img {
     max-width: 450px;
     width: 100%;
@@ -193,20 +198,29 @@ section {
   a {
     margin-top: 20px;
   }
+
+  img {
+    margin-top: 20px;
+  }
+
+  img.mobile {
+    margin: 40px auto 20px;
+  }
 }
 #sectionWhy {
   .text-left;
   background-color: @tan;
 
-  .lead {
-    margin-bottom: 50px;
-  }
-
   .row {
-    margin-bottom: 50px;
+    margin-bottom: 20px;
 
-    img {
-      width: 100%;
+    .col-md-4 {
+      text-align: center;
+      
+      img {
+        margin-top: 40px;
+        width: 75%;
+      }
     }
   }
 }
@@ -330,6 +344,7 @@ section {
   ul {
     list-style-type: none;
     padding-left: 0;
+    margin-bottom: 40px;
 
     lh {
       display: block;
@@ -341,9 +356,15 @@ section {
       }
     }
   }
-  img {
-    width: 50%;
+  .footer-brand {
+    text-align: center;
+
+    img {
+      margin-top: 40px;
+      width: 25%;
+    }
   }
+
 }
 
 /*
@@ -408,16 +429,27 @@ section {
   .masthead {
     width: 100%; /* Must be percentage or pixels for horizontal alignment */
   }
+  #sectionCover {
+    padding-top: 100px;
+  }
+  #sectionSteps, #sectionPricing, #sectionSignup {
+    .cover-padding;
+  }
 }
 
 @media (min-width: 992px) {
+  .mobile {
+    display: none;
+  }
+  .full {
+    display: block;
+  }
+
   section {
     padding-top: 80px;
     padding-bottom: 80px;
   }
   #sectionCover {
-    padding-top: 10c0px;
-
     h1 {
       margin-top: 0;
     }
@@ -425,13 +457,32 @@ section {
       padding: 10px 0;
     }
   }
-  #sectionSteps, #sectionPricing, #sectionSignup {
-    .cover-padding;
+  #sectionWhy {
+    .lead {
+      margin-bottom: 50px;
+    }
+
+    .row {
+      .col-md-4 {
+        img {
+          width: 100%;
+        }
+      }
+    }
   }
   .section-lead {
     margin-bottom: 75px;
   }
   .container {
     width: 960px;
+  }
+  #footer {
+    .footer-brand {
+      text-align: right;
+      img {
+        margin-top: 0;
+        width: 50%;
+      }
+    }
   }
 }

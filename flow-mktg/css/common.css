@@ -4237,11 +4237,23 @@ blockquote {
 }
 /* Sections */
 section {
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.mobile {
+  display: block;
+}
+.full {
+  display: none;
 }
 .cover-padding {
-  padding-top: 140px;
+  padding-top: 120px;
+}
+.btn-lg,
+.btn-group-lg > .btn {
+  padding: 10px 20px;
+  font-weight: bold;
+  white-space: normal;
 }
 /* Widgets */
 .w-seniorliving {
@@ -4322,10 +4334,6 @@ section {
   /* For at least Firefox */
   min-height: 100%;
 }
-#sectionCover .btn-lg {
-  padding: 10px 20px;
-  font-weight: bold;
-}
 #sectionCover img {
   max-width: 450px;
   width: 100%;
@@ -4342,18 +4350,25 @@ section {
 #sectionKim a {
   margin-top: 20px;
 }
+#sectionKim img {
+  margin-top: 20px;
+}
+#sectionKim img.mobile {
+  margin: 40px auto 20px;
+}
 #sectionWhy {
   text-align: left;
   background-color: #e2e1d7;
 }
-#sectionWhy .lead {
-  margin-bottom: 50px;
-}
 #sectionWhy .row {
-  margin-bottom: 50px;
+  margin-bottom: 20px;
 }
-#sectionWhy .row img {
-  width: 100%;
+#sectionWhy .row .col-md-4 {
+  text-align: center;
+}
+#sectionWhy .row .col-md-4 img {
+  margin-top: 40px;
+  width: 75%;
 }
 /*
  * How It Works
@@ -4447,6 +4462,7 @@ section {
 #footer ul {
   list-style-type: none;
   padding-left: 0;
+  margin-bottom: 40px;
 }
 #footer ul lh {
   display: block;
@@ -4455,8 +4471,12 @@ section {
 #footer ul .contact a {
   color: #74c0cf;
 }
-#footer img {
-  width: 50%;
+#footer .footer-brand {
+  text-align: center;
+}
+#footer .footer-brand img {
+  margin-top: 40px;
+  width: 25%;
 }
 /*
  * Mailchimp Style Overrides
@@ -4514,14 +4534,25 @@ section {
     width: 100%;
     /* Must be percentage or pixels for horizontal alignment */
   }
+  #sectionCover {
+    padding-top: 100px;
+  }
+  #sectionSteps,
+  #sectionPricing,
+  #sectionSignup {
+    padding-top: 120px;
+  }
 }
 @media (min-width: 992px) {
+  .mobile {
+    display: none;
+  }
+  .full {
+    display: block;
+  }
   section {
     padding-top: 80px;
     padding-bottom: 80px;
-  }
-  #sectionCover {
-    padding-top: 10c0px;
   }
   #sectionCover h1 {
     margin-top: 0;
@@ -4529,15 +4560,23 @@ section {
   #sectionCover p.lead {
     padding: 10px 0;
   }
-  #sectionSteps,
-  #sectionPricing,
-  #sectionSignup {
-    padding-top: 140px;
+  #sectionWhy .lead {
+    margin-bottom: 50px;
+  }
+  #sectionWhy .row .col-md-4 img {
+    width: 100%;
   }
   .section-lead {
     margin-bottom: 75px;
   }
   .container {
     width: 960px;
+  }
+  #footer .footer-brand {
+    text-align: right;
+  }
+  #footer .footer-brand img {
+    margin-top: 0;
+    width: 50%;
   }
 }

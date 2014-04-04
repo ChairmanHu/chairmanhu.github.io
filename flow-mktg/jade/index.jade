@@ -17,6 +17,7 @@ html(lang="en")
 
     section#sectionKim
       .container
+        img.mobile(src="assets/interviewer.png")
         .row
           .col-md-8.text-left
             h1 Meet Kim. She can help.
@@ -30,7 +31,7 @@ html(lang="en")
               Then, we give Kim the tools to host great storytelling sessions. Additionally, the entire family is invited.
             a(href="signup.html").btn.btn-lg.btn-default Sign up for an exclusive invitation
           .col-md-4
-            img(src="assets/interviewer.png")
+            img.full(src="assets/interviewer.png")
 
     section#sectionWhy
       .container
@@ -54,7 +55,7 @@ html(lang="en")
           .col-md-4
             img(src="assets/family-dinnertable.png")
         .row
-          .col-md-4
+          .col-md-4.full
             img(src="assets/interviewer-question.png")
           .col-md-8
             h2 Questions make it easier.
@@ -62,6 +63,8 @@ html(lang="en")
               There are so many great stories but where do you 
               start? An interviewer takes the pressure off. They 
               ask great questions so all you need to do is answer.
+          .col-md-4.mobile
+            img(src="assets/interviewer-question.png")
         .row
           .col-md-8
             h2 The best stories come out over time.
@@ -73,7 +76,7 @@ html(lang="en")
           .col-md-4
             img(src="assets/grandma-wide.png")
         .row
-          .col-md-4
+          .col-md-4.full
             img(src="assets/family3.png")
           .col-md-8
             h2 The app and the interviewer connects generations.
@@ -83,6 +86,7 @@ html(lang="en")
               StoryCall embraces both. Our interviewer and app gives 
               families the best of both worlds so they can capture 
               stories in a way that will be passed down for generations.
-
+          .col-md-4.mobile
+            img(src="assets/family3.png")
 
     include ../includes/footer
