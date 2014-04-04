@@ -4263,7 +4263,7 @@ section {
   border-radius: 5px;
   border: 1px dashed white;
   padding: 15px 10px;
-  margin-top: 60px;
+  margin: 20px 0 0;
 }
 .w-seniorliving p {
   font-size: 14px;
@@ -4378,9 +4378,13 @@ section {
 #sectionSteps {
   background-color: #63a69f;
 }
-#sectionSteps .fa {
+#sectionSteps .row {
+  margin-bottom: 40px;
+}
+#sectionSteps i {
   font-size: 100px;
   margin-bottom: 20px;
+  margin-top: 40px;
 }
 #sectionScreenshots {
   text-align: left;
@@ -4388,6 +4392,11 @@ section {
 }
 #sectionScreenshots .row {
   border-bottom: dotted 1px #334045;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+#sectionScreenshots .row .col-md-8 p {
+  margin-bottom: 20px;
 }
 #sectionScreenshots .row .col-md-4 {
   text-align: center;
@@ -4409,6 +4418,7 @@ section {
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 5px;
   padding: 20px;
+  margin: 30px 15px 0;
 }
 #sectionPricing .col-md-4 img {
   width: 100%;
@@ -4436,13 +4446,16 @@ section {
   background-image: url('../assets/lightpaperfibers.png');
 }
 #sectionFAQ .row {
-  margin-bottom: 40px;
+  margin-bottom: 0;
 }
-#sectionFAQ .row h4 {
+#sectionFAQ .row .col-md-4 {
+  margin-bottom: 20px;
+}
+#sectionFAQ .row .col-md-4 h4 {
   padding-top: 14px;
   border-top: 1px solid #CCC;
 }
-#sectionFAQ .row p {
+#sectionFAQ .row .col-md-4 p {
   font-size: 14px;
 }
 /*
@@ -4490,6 +4503,7 @@ section {
   background-color: white;
   border-radius: 3px;
   padding: 10px 20px;
+  margin-top: 30px;
 }
 #mc_embed_signup h2 {
   font-weight: normal;
@@ -4555,6 +4569,12 @@ section {
   .full {
     display: block;
   }
+  .section-lead {
+    margin-bottom: 50px;
+  }
+  .container {
+    width: 960px;
+  }
   section {
     padding-top: 80px;
     padding-bottom: 80px;
@@ -4571,11 +4591,26 @@ section {
   #sectionWhy .row .col-md-4 img {
     width: 100%;
   }
-  .section-lead {
-    margin-bottom: 75px;
+  #sectionSteps .row {
+    margin-bottom: 20px;
   }
-  .container {
-    width: 960px;
+  #sectionSteps i {
+    margin-top: 0;
+  }
+  #sectionPricing .col-md-4 {
+    margin: 0;
+  }
+  #sectionFAQ .row {
+    margin-bottom: 30px;
+  }
+  #sectionFAQ .row .col-md-4 {
+    margin-bottom: 0;
+  }
+  #mc_embed_signup {
+    margin-top: 0;
+  }
+  .w-seniorliving {
+    margin: 60px -15px 0;
   }
   #footer .footer-brand {
     text-align: right;

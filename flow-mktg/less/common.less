@@ -104,7 +104,7 @@ section {
   border-radius: 5px;
   border: 1px dashed white;
   padding: 15px 10px;
-  margin-top: 60px;
+  margin: 20px 0 0;
 
   p {
     font-size: 14px;
@@ -234,9 +234,13 @@ section {
 #sectionSteps {
   background-color: @green;
 
-  .fa {
+  .row {
+    margin-bottom: 40px;
+  }
+  i {
     font-size: 100px;
     margin-bottom: 20px;
+    margin-top: 40px;
   }
 }
 
@@ -246,9 +250,13 @@ section {
 
   .row {
     border-bottom: dotted 1px @darkgray;
+    padding-top: 40px;
+    padding-bottom: 40px;
 
     .col-md-8 {
-
+      p {
+        margin-bottom: 20px;
+      }
     }
     .col-md-4 {
       text-align: center;
@@ -277,6 +285,7 @@ section {
     background-color: rgba(255,255,255,0.1);
     border-radius: 5px;
     padding: 20px;
+    margin: 30px 15px 0;
     
     img {
       width: 100%;
@@ -314,16 +323,19 @@ section {
  #sectionFAQ {
   background-image: @paper;
   .row {
-    margin-bottom: 40px;
+    margin-bottom: 0;
+    .col-md-4 {
+      margin-bottom: 20px;
+      h4 {
+        padding-top: 14px;
+        border-top: 1px solid #CCC;
+      }
 
-    h4 {
-      padding-top: 14px;
-      border-top: 1px solid #CCC;
+      p {
+        font-size: 14px;
+      }
     }
 
-    p {
-      font-size: 14px;
-    }
   }
  }
 
@@ -380,6 +392,7 @@ section {
   background-color: white;
   border-radius: 3px;
   padding: 10px 20px;
+  margin-top: 30px;
 
   h2 {
     font-weight: normal;
@@ -450,7 +463,12 @@ section {
   .full {
     display: block;
   }
-
+  .section-lead {
+    margin-bottom: 50px;
+  }
+  .container {
+    width: 960px;
+  }
   section {
     padding-top: 80px;
     padding-bottom: 80px;
@@ -476,11 +494,32 @@ section {
       }
     }
   }
-  .section-lead {
-    margin-bottom: 75px;
+  #sectionSteps {
+    .row {
+      margin-bottom: 20px;
+    }
+    i {
+      margin-top: 0;
+    }
   }
-  .container {
-    width: 960px;
+  #sectionPricing {
+    .col-md-4 {
+      margin: 0;
+    }
+  }
+  #sectionFAQ {
+    .row {
+      margin-bottom: 30px;
+      .col-md-4 {
+        margin-bottom: 0;
+      }
+    }
+  }
+  #mc_embed_signup {
+    margin-top: 0;
+  }
+  .w-seniorliving {
+    margin: 60px -15px 0;
   }
   #footer {
     .footer-brand {
