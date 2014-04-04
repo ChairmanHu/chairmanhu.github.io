@@ -4243,6 +4243,11 @@ section {
 .full {
   display: none;
 }
+.lead {
+  font-size: 20px;
+  line-height: 26px;
+  font-weight: inherit;
+}
 .cover-padding {
   padding-top: 120px;
 }
